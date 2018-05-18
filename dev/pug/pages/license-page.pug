@@ -1,0 +1,33 @@
+extends ../layout/main
+
+block variables
+	- var title = 'license-page'
+	- var pageClass = 'license-page'
+
+block content
+	.mobile-content-overlay
+	include ../modules/header
+	include ../modules/main-nav
+	section.license
+		.section-background
+			img.news-layer(src="/static/img/general/news-layer-1.png")
+			img.news-layer(src="/static/img/general/news-layer-2.png")
+			img.news-layer(src="/static/img/general/news-layer-3.png")
+		.container
+			.heading-wrap
+				h1.heading.heading-license лицензионное соглашение
+			.block-content
+				.content-row-wrap
+					ol.list-wrap
+						li.content-list
+							span.content-subtitle Предмет Соглашения
+							ol.content-text-wrap
+								li.content-text  Общество с ограниченной ответственностью «Суп Медиа» (Администрация) предоставляет пользователю информационно-телекоммуникационной сети Интернет (Пользователь) возможность использования Сервиса на условиях, изложенных в настоящем пользовательском соглашении (Соглашение).
+								li.content-text  Общество с ограниченной ответственностью «Суп Медиа» (Администрация) предоставляет пользователю информационно-телекоммуникационной сети Интернет (Пользователь) возможность использования Сервиса на условиях, изложенных в настоящем пользовательском соглашении (Соглашение).
+					
+					
+					
+	
+	include ../modules/footer 
+
+	

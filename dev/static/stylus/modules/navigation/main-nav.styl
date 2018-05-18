@@ -1,0 +1,109 @@
+.main-nav
+  display: flex;
+  justify-content: center;
+  background: #302f2e
+
+
+
+.navigation
+  display: flex;
+  width: 100%
+  justify-content: space-between;
+
+
+
+
+.nav-link
+  padding: 20px 0
+  position: relative;
+  font-size: 15px
+  font-weight: 700
+  color: whiteColor
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out
+  &:before
+    content: ''
+    position: absolute;
+    width: 100%
+    height: 3px
+    bottom: 0
+    left: 0
+    background: orange-one
+    opacity: 0
+    transition: 0.3s ease-in-out
+  &:hover:before
+    opacity: 1
+    transition: 0.3s ease-in-out
+  &:hover
+    color: orange-one
+    transition: 0.3s ease-in-out
+
+.nav-link--active
+  color: orange-one
+  transition: 0.3s ease-in-out
+
+
+.mobile-menu
+  position: absolute;
+  top: 100%
+  background: #302f2e
+  width: 100%
+  max-width: 320px
+  transform: translateX(-100vh);
+  transition: 0.5s ease-in-out
+
+.mobile-navigation
+  display: flex;
+  flex-direction: column;
+  width: 100%
+
+.nav-link--mobile
+  border-bottom: 1px solid #4f4e4d
+  text-transform: capitalize;
+  padding: 20px
+  color: whiteColor
+  font-weight: 600
+  position: relative;
+  transition: 0.3s ease-in-out
+  &:after
+    transition: 0.3s ease-in-out
+    content: ''
+    position: absolute;
+    right: 20px
+    top: 50%
+    width: 10px
+    height: 10px
+    background: url('/static/img/general/link-arrow.png') no-repeat center
+  &:hover
+    color: orange-one
+    transition: 0.3s ease-in-out
+    background: #1d1d1d
+    border-bottom: 1px solid #1d1d1d
+  &:hover:after
+    transition: 0.3s ease-in-out
+    background: url('/static/img/general/link-arrow-orange.png') no-repeat center
+
+.mobile-menu--active
+  transform: translateX(0);
+  transition: 0.5s ease-in-out
+  transition-delay: 0.1s
+  z-index: 999
+
+
+.mobile-content-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #1d1d1d;
+    opacity: 0;
+    top: 80px;
+    left: 0;
+    z-index: 199
+    transform: translateX(-270vh);
+    transition: 0.5s ease-in-out
+}
+
+.mobile-content-overlay--active
+  opacity: 0.8
+  transform: translateX(0);
+  transition: 0.5s ease-in-out

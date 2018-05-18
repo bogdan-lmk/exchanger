@@ -1,0 +1,38 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Single News'
+	- var pageClass = 'single-news-page'
+
+block content
+	.mobile-content-overlay
+	include ../modules/header
+	include ../modules/main-nav
+	section.news
+		.section-background
+			img.news-layer(src="/static/img/general/news-layer-1.png")
+			img.news-layer(src="/static/img/general/news-layer-2.png")
+			img.news-layer(src="/static/img/general/news-layer-3.png")
+		.container
+			.news-content
+				.heading-wrap
+					h1.heading.heading-news Новости
+				.content-row-wrap
+					.content-row
+						.content-image
+							img(src="/static/img/general/news-photo.png").content-img
+						.news-text-wrap
+							.main-news-text
+								h3.news-text-title Как выбрать домен для своего сайта?
+								span.news-text-date 12.04.2017
+							.news-content-text-wrap
+								p.news-content-text.mobile-news-content-text Решил открыть сайт в сети Интернет? Первое, что тебе нужно – это создать собственный домен. Почему это важно? Отсутствие домена – это как отсутствие печати в документе, и клиентыуже тебе не доверяют, думают, что твой сайт – это очередной развод, особенно если ты используешь обычный бесплатный или длинный домен. Домен – это твой первый шаг к успеху!							
+							.news-content-text-wrap.mobile-hidden-text
+								span.news-content-subtitle Выбор имени домена
+								p.news-content-text В имени домена могут быть буквы, цифры и символ тире. Тире не может быть первым или последним символом в имени домена. В общем случае буквы в домене могут быть только латинские. В последнее время, все больше доменных зон поддерживают кириллицу в имени домена. Они называются IDN (Internationalized Domain Names ). Выбирая имя необходимо помнить, что смешивать символы нельзя, в названии домена могут быть символы латинского алфавита, либо кириллица
+					.content-row
+						.news-content-text-wrap
+							span.news-content-subtitle Выбор имени домена
+							p.news-content-text Определиться с доменной зоной, в которой Вы хотите регистрировать имя, так же важно, как и подобрать домен. Доменные зоны можно разделить на несколько групп.Международные доменные зоны. К ним относятся COM, NET, ORG, INFO, BIZ. В них зарегистрирована большая часть доменных имен. Поэтому найти подходящее имя тут сложно.Украинские доменные зоны. Выбор домена в одной из этих зон, позволяет однозначно указать принадлежность сайта. Здесь выделяем:.UA – привилегированная зона. В ней могут регистрировать доменное имя только владельцы торговых марок..COM.UA – наиболее популярная украинская доменная зона. В ней выбирают домены украинские компании.
+	include ../modules/footer
+	

@@ -1,0 +1,51 @@
+extends ../layout/main
+
+block variables
+	- var title = 'thanks-page'
+	- var pageClass = 'thanks-page'
+
+block content
+	.mobile-content-overlay
+	include ../modules/header
+	include ../modules/main-nav
+	section.thanks
+		.section-background
+			img.news-layer(src="/static/img/general/news-layer-1.png")
+			img.news-layer(src="/static/img/general/news-layer-2.png")
+			img.news-layer(src="/static/img/general/news-layer-3.png")
+		.container
+			.block-content.thanks-block-content
+				.thanks-title-wrap
+					.thanks-title-image
+						img.th-img(src="/static/img/general/check-mark.png")
+					.thanks-title-text
+						h3.thanks-main-title Спасибо за покупку!
+						h4.thanks-main-subtitle Оплата произведена успешно
+				.thanks-payment-wrap
+					.thanks-payment-block
+						.payment-info-row
+							span.payment-info-text Дата:
+							span.payment-content-text 07.07.2018  19.00
+						.payment-info-row
+							span.payment-info-text Клиент:
+							span.payment-content-text Константиновский Константин Константинович
+						.payment-info-row
+							span.payment-info-text Телефон:
+							span.payment-content-text + (757) 57 575 74 64
+					.thanks-payment-block
+						.payment-info-row
+							span.payment-info-text Услуга:
+							span.payment-content-text Разработка шаблона
+						.payment-info-row
+							span.payment-info-text Стоимость услуги:
+							span.payment-content-text 300 $
+						.payment-info-row
+							span.payment-info-text Способ оплаты:
+							span.payment-content-text Visa Credit Card		
+				.payment-sum-wrap
+					span.payment-sum-status  Оплачено:
+					span.payment-sum 300$
+				.button-wrap
+					button.btn.btn--orange.btn-go-to-homepage вернуться на главную 	
+	include ../modules/footer
+	

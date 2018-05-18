@@ -1,0 +1,61 @@
+.registr
+  height: 100%
+
+
+.reg-tab-wrap
+  display: flex;
+
+.reg-tab-link
+  font-family: bebasFont
+  font-size: 36px
+  width: 50%
+  text-align: center;
+  padding: 30px 0
+  font-weight: 600
+  letter-spacing: 3px
+  transition: 0.3s ease-in-out
+  cursor: pointer;
+  color: whiteColor
+  background: #0092d4
+
+.reg-tab-link--active
+  background: whiteColor
+  color: #0092d4
+  transition: 0.3s ease-in-out
+
+.reg-tab-link--mobile
+  background: #0092d4
+  color: whiteColor
+  transition: 0.3s ease-in-out
+  display: none;
+
+.reg-tab-content
+  display: flex;
+  justify-content: center;
+  width: 100%
+  display: none;
+
+.reg-tab-content--active
+  display: flex;
+
+.form-field-wrap
+  display: flex;
+  width: 100%
+  justify-content: center;
+  padding: 30px 0 45px
+
+.reg-form
+  flex-direction: column;
+  margin-right: 50px
+  &:last-child
+    margin-right: 0
+
+.reg-field
+  border-radius: 50px
+  padding-left: 25px
+  border: 1px solid #cccccc
+  line-height: 40px
+  width: 405px
+  margin-bottom: 20px
+  &:last-child
+    margin-bottom: 0

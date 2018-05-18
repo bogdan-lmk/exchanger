@@ -1,0 +1,60 @@
+header
+  position: relative;
+
+.header-content
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0
+  position: relative;
+
+
+.auth
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+.auth-text-column
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px
+
+.auth-text-top
+  font-weight: 700
+  font-size: 15px
+  text-transform: uppercase;
+.auth-text-btm
+  font-size: 14px
+  font-weight: 600
+
+.form
+  display: flex;
+
+
+.auth-field
+  border-radius:  50px
+  border: 1px solid #cccccc
+  padding-left: 50px
+  line-height: 40px
+  width: 175px
+  margin-right: 10px
+
+.field-wrap
+  position: relative;
+  &:before
+    content: ''
+    position: absolute;
+    width: 16px
+    height: 16px
+    top: 50%
+    transform translateY(-50%)
+    left: 25px
+
+.user-field
+  &:before
+    background: url('/static/img/general/user-ic.png') no-repeat
+    height: 18px
+    
+.pass-field
+  &:before
+    background: url('/static/img/general/key-ic.png')

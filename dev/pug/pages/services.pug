@@ -1,0 +1,47 @@
+extends ../layout/main
+
+block variables
+	- var title = 'services-page'
+	- var pageClass = 'services-page'
+
+block content
+	.mobile-content-overlay
+	include ../modules/header
+	include ../modules/main-nav
+	section.services
+		.section-background
+			img.news-layer.dec-first(src="/static/img/general/decor-1.png")
+			img.news-layer.dec-second(src="/static/img/general/decor-2.png")
+			img.news-layer.dec-third(src="/static/img/general/decor-3.png")
+		.container
+			.heading-wrap
+				h1.heading.heading-news Услуги
+			.block-content.services-block-content
+				.row-content
+					.block-title-wrap
+						h3.services-title разработка шаблона
+						h3.services-subtitle (Дизайн + интеграция)
+				.row-content
+					.services-present
+						img.img-services(src="/static/img/general/services-photo.png")
+						.services-present-text
+							span.pre-text от
+							span.payment-sum.services-payment-sum 300$
+							span.payment-sum.services-payment-eq usd
+					.services-form-wrap
+						span.services-form-text Заполните форму для заказа услуги:
+						input(placeholder="ФИО").init-field#name-field
+						.input-row
+							input(placeholder="Email").init-field#email-field
+							input(placeholder="Телефон").init-field#phone-field
+						textarea(placeholder="Оставить комментарий").comment-field
+						.services-button-wrap
+							button.btn.btn--orange.btn-order заказать услугу
+							button.btn.btn-enter заказать обратный звонок
+				.content-text-wrap
+					p.content-text В сравнении с полностью самостоятельным проектированием, шаблоны обладают рядом преимуществ. Основная польза от использования шаблонов состоит в снижении сложности разработки за счёт готовых абстракций для решения целого класса проблем. Шаблон даёт решению своё имя, что облегчает коммуникацию между разработчиками, позволяя ссылаться на известные шаблоны. Таким образом, за счёт шаблонов производится унификация деталей решений: модулей, элементов проекта, — снижается количество ошибок. Применение шаблонов концептуально сродни использованию готовых библиотек кода. Правильно сформулированный шаблон проектирования позволяет, отыскав удачное решение, пользоваться им снова и снова. Набор шаблонов помогает разработчику выбрать возможный, наиболее подходящий вариант проектирования.			 
+				.content-text-wrap
+					p.content-text Обычно шаблон не является законченным образцом, который может быть прямо преобразован в код; это лишь пример решения задачи, который можно использовать в различных ситуациях. Объектно-ориентированные шаблоны показывают отношения и взаимодействия между классами или объектами, без определения того, какие конечные классы или объекты приложения будут использоваться.«Низкоуровневые» шаблоны, учитывающие специфику конкретного языка программирования, называются идиомами. Это хорошие решения проектирования, характерные для конкретного языка или программной платформы, и потому не универсальные.На наивысшем уровне существуют архитектурные шаблоны, они охватывают собой архитектуру всей программной системы.Алгоритмы по своей сути также являются шаблонами, но не проектирования, а вычисления, так как решают вычислительные задачи.
+
+	include ../modules/footer
+	

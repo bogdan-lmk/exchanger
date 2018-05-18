@@ -1,0 +1,45 @@
+extends ../layout/main
+
+block variables
+	- var title = 'regestration-page'
+	- var pageClass = 'regestration-page'
+
+block content
+	.mobile-content-overlay
+	include ../modules/header
+	include ../modules/main-nav
+	section.registr
+		.section-background
+			img.news-layer(src="/static/img/general/news-layer-1.png")
+			img.news-layer(src="/static/img/general/news-layer-2.png")
+			img.news-layer(src="/static/img/general/news-layer-3.png")
+		.container
+			.block-content.registr-block-content
+				.reg-tab-wrap
+					.reg-tab-link.reg-tab-link--active(data-tab="1") для физических лиц
+					.reg-tab-link(data-tab="2") для Юридических лиц
+				.reg-tab-content.reg-tab-content--active(data-content="1")
+					.form-field-wrap
+						form.form.reg-form
+							input(placeholder="ФИО").reg-field
+							input(placeholder="Логин").reg-field
+							input(placeholder="Email").reg-field
+						form.form.reg-form
+							input(placeholder="Пароль" type="password").reg-field
+							input(placeholder="Повтор пароля" type="password").reg-field
+							button.btn.btn--orange.btn-regestration.btn-regestration--mobile зарегистрироваться
+				.reg-tab-content(data-content="2")
+					.reg-tab-link.reg-tab-link--mobile для Юридических лиц
+					.form-field-wrap
+						form.form.reg-form
+							input(placeholder="Название компании").reg-field
+							input(placeholder="ОКПО").reg-field
+							input(placeholder="ФИО").reg-field
+							input(placeholder="Логин").reg-field
+						form.form.reg-form
+							input(placeholder="Email").reg-field
+							input(placeholder="Пароль" type="password").reg-field
+							input(placeholder="Повтор пароля" type="password").reg-field
+							button.btn.btn--orange.btn-regestration.btn-regestration--mobile зарегистрироваться			
+	include ../modules/footer
+	
